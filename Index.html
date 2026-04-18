@@ -1,66 +1,116 @@
-<!-- ================= INDEX.HTML ================= --><!DOCTYPE html><html>
+<!-- ================= index.html ================= --><!DOCTYPE html><html>
 <head>
 <title>Sorry Shivani</title>
 <style>
-body {font-family: Arial; background: #ffe6f0; text-align: center;}
-h1 {color: #d63384;}
-button {padding: 10px; margin: 10px;}
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  text-align: center;
+  overflow: hidden;
+}
+h1 {color: white; font-size: 40px;}
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border:none;
+  background:#ff4d88;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+.heart {
+  position: absolute;
+  color: red;
+  animation: float 5s infinite;
+}
+@keyframes float {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-800px);}
+}
+</style>
+</head>
+<body><audio autoplay loop>
+  <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
+</audio><h1>Dear Dr. Shivani 💖</h1>
+<p style="color:white; font-size:18px;">I am truly sorry...</p>
+<p style="color:white;">From Aryan, Sandeep & Nameesha</p><a href="page2.html"><button>My Apology</button></a> <a href="page3.html"><button>Shayari</button></a> <a href="page4.html"><button>Fun & Game</button></a>
+
+<script>
+for(let i=0;i<20;i++){
+ let heart = document.createElement("div");
+ heart.className = "heart";
+ heart.innerHTML = "❤️";
+ heart.style.left = Math.random()*100+"%";
+ heart.style.top = Math.random()*100+"%";
+ heart.style.fontSize = (Math.random()*20+20)+"px";
+ document.body.appendChild(heart);
+}
+</script></body>
+</html><!-- ================= page2.html ================= --><!DOCTYPE html><html>
+<head>
+<title>Apology</title>
+<style>
+body {background:#fff0f5; text-align:center; font-family:Arial;}
+p {font-size:18px;}
 </style>
 </head>
 <body>
-<h1>Dear Dr. Shivani 💖</h1>
-<p>I am really sorry...</p>
-<p>From Aryan, Sandeep & Nameesha</p>
-<a href="page2.html"><button>Read My Heart</button></a>
-<a href="page3.html"><button>Shayari For You</button></a>
-<a href="page4.html"><button>Fun & Games</button></a>
+<h2>My Heartfelt Apology 💔</h2>
+<p>Shivani, I know I made mistakes and hurt you.</p>
+<p>You are not just my best friend, you are very special to me.</p>
+<p>Your dedication as an MBBS student inspires me every day 🩺</p>
+<p>I promise I will never repeat this again.</p>
+<p>Please forgive me 🙏</p><button onclick="showMessage()">Click Me ❤️</button>
+
+<script>
+function showMessage(){
+ alert("You mean everything to me Shivani 💖");
+}
+</script><br><br> <a href="index.html">⬅ Back Home</a>
+
 </body>
-</html><!-- ================= PAGE2.HTML ================= --><!DOCTYPE html><html>
-<head>
-<title>Apology Letter</title>
-</head>
-<body style="background:#fff0f5; text-align:center;">
-<h2>My Heartfelt Apology</h2>
-<p>Shivani, I know I made mistakes...</p>
-<p>You are not just a friend, you are someone very special.</p>
-<p>Your dedication as an MBBS student inspires me every day.</p>
-<p>Please forgive me 🙏</p>
-<a href="index.html">Back</a>
-</body>
-</html><!-- ================= PAGE3.HTML ================= --><!DOCTYPE html><html>
+</html><!-- ================= page3.html ================= --><!DOCTYPE html><html>
 <head>
 <title>Shayari</title>
+<style>
+body {background:#f0fff0; text-align:center; font-family:Arial;}
+p {font-size:18px;}
+</style>
 </head>
-<body style="background:#f0fff0; text-align:center;">
-<h2>For You Shivani 💕</h2>
-<p>"Dosti mein kabhi kabhi galti ho jaati hai,
-Par sachha dost kabhi door nahi jaata hai."</p>
-<p>"Tumhari muskaan hi meri duniya hai,
-Please wapas aa jao, yehi dua hai."</p>
-<p>Future Doctor ho tum, dil bhi heal kar do 💉❤️</p>
-<a href="index.html">Back</a>
+<body>
+<h2>Beautiful Lines For You 💕</h2><p>"Dosti mein galti ho jaati hai,
+Par sachha dost kabhi door nahi jaata hai."</p><p>"Tumhari muskaan meri duniya hai,
+Wapas aa jao, bas yahi dua hai."</p><p>"Doctor ban kar sabka ilaaj karogi,
+Ek baar mere dil ka bhi ilaaj kar do ❤️"</p><p>"Gussa tumhara bhi pyara lagta hai,
+Bas ab maan jao, dil bechara lagta hai 💔"</p><a href="index.html">⬅ Back Home</a>
+
 </body>
-</html><!-- ================= PAGE4.HTML ================= --><!DOCTYPE html><html>
+</html><!-- ================= page4.html ================= --><!DOCTYPE html><html>
 <head>
-<title>Fun Page</title>
+<title>Fun Game</title>
+<style>
+body {background:#e6f7ff; text-align:center; font-family:Arial;}
+button {padding:10px; margin:10px;}
+</style>
 <script>
 function checkAnswer() {
 let ans = document.getElementById("ans").value;
-if(ans.toLowerCase() == "yes") {
-alert("Yay! Shivani forgave me ❤️");
+if(ans.toLowerCase() === "yes") {
+alert("Thank you Shivani ❤️ You made my day!");
 } else {
-alert("Please forgive me 😢");
+alert("Please forgive me 😢 I really miss you");
 }
-}
-</script>
+}function surprise(){ alert("You are the best future doctor 👩‍⚕️❤️"); } </script>
+
 </head>
-<body style="background:#e6f7ff; text-align:center;">
+<body>
 <h2>Mini Game 🎮</h2>
-<p>Will you forgive Aryan?</p>
-<input type="text" id="ans" placeholder="Type yes">
-<button onclick="checkAnswer()">Submit</button><h3>Medical Corner 🩺</h3>
+<p>Will you forgive Aryan?</p><input type="text" id="ans" placeholder="Type yes">
+<button onclick="checkAnswer()">Submit</button><br>
+<button onclick="surprise()">🎁 Surprise</button><h3>Medical Corner 🩺</h3>
 <p>"Doctors heal bodies, but kindness heals hearts."</p>
-<p>"MBBS life is tough, but you are tougher 💪"</p><a href="index.html">Back</a>
+<p>"MBBS life is tough, but you are stronger 💪"</p><br><br> <a href="index.html">⬅ Back Home</a>
 
 </body>
 </html>
