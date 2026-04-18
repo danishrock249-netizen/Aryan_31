@@ -1,0 +1,66 @@
+<!-- ================= INDEX.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Sorry Shivani</title>
+<style>
+body {font-family: Arial; background: #ffe6f0; text-align: center;}
+h1 {color: #d63384;}
+button {padding: 10px; margin: 10px;}
+</style>
+</head>
+<body>
+<h1>Dear Dr. Shivani 💖</h1>
+<p>I am really sorry...</p>
+<p>From Aryan, Sandeep & Nameesha</p>
+<a href="page2.html"><button>Read My Heart</button></a>
+<a href="page3.html"><button>Shayari For You</button></a>
+<a href="page4.html"><button>Fun & Games</button></a>
+</body>
+</html><!-- ================= PAGE2.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Apology Letter</title>
+</head>
+<body style="background:#fff0f5; text-align:center;">
+<h2>My Heartfelt Apology</h2>
+<p>Shivani, I know I made mistakes...</p>
+<p>You are not just a friend, you are someone very special.</p>
+<p>Your dedication as an MBBS student inspires me every day.</p>
+<p>Please forgive me 🙏</p>
+<a href="index.html">Back</a>
+</body>
+</html><!-- ================= PAGE3.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Shayari</title>
+</head>
+<body style="background:#f0fff0; text-align:center;">
+<h2>For You Shivani 💕</h2>
+<p>"Dosti mein kabhi kabhi galti ho jaati hai,
+Par sachha dost kabhi door nahi jaata hai."</p>
+<p>"Tumhari muskaan hi meri duniya hai,
+Please wapas aa jao, yehi dua hai."</p>
+<p>Future Doctor ho tum, dil bhi heal kar do 💉❤️</p>
+<a href="index.html">Back</a>
+</body>
+</html><!-- ================= PAGE4.HTML ================= --><!DOCTYPE html><html>
+<head>
+<title>Fun Page</title>
+<script>
+function checkAnswer() {
+let ans = document.getElementById("ans").value;
+if(ans.toLowerCase() == "yes") {
+alert("Yay! Shivani forgave me ❤️");
+} else {
+alert("Please forgive me 😢");
+}
+}
+</script>
+</head>
+<body style="background:#e6f7ff; text-align:center;">
+<h2>Mini Game 🎮</h2>
+<p>Will you forgive Aryan?</p>
+<input type="text" id="ans" placeholder="Type yes">
+<button onclick="checkAnswer()">Submit</button><h3>Medical Corner 🩺</h3>
+<p>"Doctors heal bodies, but kindness heals hearts."</p>
+<p>"MBBS life is tough, but you are tougher 💪"</p><a href="index.html">Back</a>
+
+</body>
+</html>
